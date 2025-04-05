@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bowlby+One+SC&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cherry+Bomb+One&family=Fredoka:wght@300..700&family=Gamja+Flower&family=Hachi+Maru+Pop&family=Klee+One&family=Outfit:wght@100..900&family=Patrick+Hand+SC&family=Sigmar&family=Titan+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #eaeff3;
+    height: 6000px;
+    font-family: "Montserrat", serif;
+    padding-top: 40px;
+    overflow:auto;
+}
+
+/* Navigation Bar */
+
+.menubar {
+    background-color: black;
+    border-bottom: 2px solid #1f243d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.menu_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    min-height: 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: "Bowlby One", sans-serif;
+    color: whitesmoke;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 30px;
+    
+    
+    #home {
+        color: whitesmoke;
+        font-size: 17px;
+        transition: 0.3s;
+
+    }
+}
+
+.download-btn {
+    margin: 1rem 0;
+    position: relative;
+}
+.download-btn i {
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    color: white;
+}
+
+.btn {
+    width: 16rem;
+    height: 50px;
+    background: #898AA2;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    color: white;
+    cursor: pointer; 
+    transition: .2s ease;
+  
+    &:hover {
+      background-color: #696A7C;
+    }
+  }
+
+.download-btn .btn p {
+    text-align: left;
+    padding-left: 1.5rem;
+    font-family: "Fredoka", sans-serif;
+}
+
+.main {
+    margin-top: 3%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dimg {
+    margin-top: 2px;
+    margin-left: 50px;
+}
+
+/*INfo Text*/
+.toc {
+    display: flex;
+    background-color: #696A7C;
+    width: 400px;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 2rem;
+    border-radius: 1rem;
+}
+.toc a {
+    color: aliceblue;
+    font-weight: 500;
+    transition: .2s ease;
+}
+
+.toc a:hover {
+    color: #1f243d;
+}
+
+.information {
+    margin-top: 2rem;
+}
+
+.information #info {
+    margin-top: 2rem;
+    margin: 2rem 10rem;
+}
+
+.information #info h2 {
+    margin-bottom: .5rem;
+    font-family: "Sigmar", sans-serif;
+    letter-spacing: 1px;
+    color: #30385f;
+}
+
+/*About.html*/
+.image-gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+
+}
+
+
+.image-item {
+    text-align: center;
+}
+
+
+.image-item img {
+    width: auto; 
+    height: 45%; 
+    max-width: 160px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 2px;
+    margin-top: 100px;
+}
+
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: black;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+}
+
+.name-text {
+    font-family: "Fredoka", sans-serif;
+}
+
+@media (max-width: 900px) {
+    .menu_content {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .nav-list {
+        column-gap: 10px;
+    }
+    .main {
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        flex-direction: column;
+    }
+}
